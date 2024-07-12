@@ -11,4 +11,7 @@ export class EstudoComponent {
 
   nome: String = "Escrito do canal";
 
+  mensagem(){
+    alert('estudando event biding');
+  }
 }
