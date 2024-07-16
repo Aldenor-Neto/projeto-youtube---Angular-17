@@ -1,5 +1,8 @@
 <p>Olá {{nome}}</p>
 
-<img class="imagem" [src]="imagem" [alt]="descricao">
+<div *ngIf="exibirImagem">
+  <img class="imagem" [src]="imagem" [alt]="descricao">
 
-<button (click)="alterarImagem()">Alterar imagem</button>
+  <button (click)="alterarImagem()">Alterar imagem</button>
+</div>
+<button (click)="exibeOcultaImagem()">Exibe/oculta imagem</button>
