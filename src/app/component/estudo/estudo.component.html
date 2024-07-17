@@ -6,3 +6,13 @@
   <button (click)="alterarImagem()">Alterar imagem</button>
 </div>
 <button (click)="exibeOcultaImagem()">Exibe/oculta imagem</button>
+
+<ul>
+  <li *ngFor="let n of nomes ; index as indice">{{ indice+1 }}º - {{ n }}</li>
+</ul>
+
+<div [ngSwitch]="linguagem">
+  <div *ngSwitchCase="'html'">Linguagem de marcação</div>
+  <div *ngSwitchCase="'java'">Linguagem de programação</div>
+  <div *ngSwitchDefault="">Linguagem não encontrada</div>
+</div>

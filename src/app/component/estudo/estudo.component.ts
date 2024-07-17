@@ -14,6 +14,8 @@ export class EstudoComponent {
   imagem: String = "../../../assets/imagem home studio Aldenor Neto.jpg";
   descricao: String = "imagem do stúdio Aldenor Neto";
   exibirImagem: boolean = false;
+  nomes: String[] = ['Pedro', 'João', 'Matheus', 'Thiago'];
+  linguagem: String = "java";
 
 exibeOcultaImagem(){
   if(this.exibirImagem){
