@@ -1,3 +1,10 @@
-<p [ngStyle]="{'color': cor ?'green' :'red'}">Estudando ngStyl</p>
 
-<p *ngFor="let l of lista; index as index" [ngClass]="{'fonteVerde': l=='aprovado', 'fonteVermelha': l != 'aprovado'}">{{ index+1 }} - {{ l }}</p>
+@if (media >=7) {
+  <p>Aprovado(a)</p>
+}
+@else if (media >=5) {
+  <p>Em Recuperação</p>
+}
+@else {
+  <p>Reprovado(a)</p>
+}

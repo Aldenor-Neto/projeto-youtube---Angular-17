@@ -10,7 +10,8 @@ import { Component } from '@angular/core';
 })
 export class EstudoComponent {
 
-cor: boolean = false;
+cor: boolean = true;
 lista: String[] = ['aprovado', 'reprovado', 'aprovado', 'reprovado'];
+media: number = 3;
 
 }
