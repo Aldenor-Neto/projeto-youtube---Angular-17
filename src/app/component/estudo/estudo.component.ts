@@ -10,32 +10,7 @@ import { Component } from '@angular/core';
 })
 export class EstudoComponent {
 
-  nome: String = "Escrito do canal";
-  imagem: String = "../../../assets/imagem home studio Aldenor Neto.jpg";
-  descricao: String = "imagem do stúdio Aldenor Neto";
-  exibirImagem: boolean = false;
-  nomes: String[] = ['Pedro', 'João', 'Matheus', 'Thiago'];
-  linguagem: String = "java";
+cor: boolean = false;
+lista: String[] = ['aprovado', 'reprovado', 'aprovado', 'reprovado'];
 
-exibeOcultaImagem(){
-  if(this.exibirImagem){
-    this.exibirImagem = false;
-  } else {
-    this.exibirImagem = true;
-  }
-}
-
-  mensagem() {
-    alert('estudando event biding');
-  }
-
-  alterarImagem(){
-if(this.imagem === "../../../assets/imagem home studio Aldenor Neto.jpg"){
-  this.imagem ="../../../assets/imagem kenosis.jpeg";
-  this.descricao = "imagem Kenôsis";
-} else{
-  this.imagem = "../../../assets/imagem home studio Aldenor Neto.jpg";
-  this.descricao = "imagem do stúdio Aldenor Neto";
-}
-  }
 }
