@@ -11,7 +11,7 @@ import { Component } from '@angular/core';
 export class EstudoComponent {
 
 cor: boolean = true;
-lista: String[] = ['aprovado', 'reprovado', 'aprovado', 'reprovado'];
+lista: String[] = ['Aldenor Neto', 'Fabrícia', 'Jônatas', 'Davi'];
 media: number = 3;
 
 }
