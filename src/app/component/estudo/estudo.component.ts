@@ -13,5 +13,6 @@ export class EstudoComponent {
 cor: boolean = true;
 lista: String[] = ['Aldenor Neto', 'Fabrícia', 'Jônatas', 'Davi'];
 media: number = 3;
+linguagem: String = "php";
 
 }
