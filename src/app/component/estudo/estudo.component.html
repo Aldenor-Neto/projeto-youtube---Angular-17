@@ -1,2 +1,19 @@
-<h1>{{nome}}</h1>
-<input type="text" placeholder="Digite seu Nome" [(ngModel)]="nome">
+<img src="../../../assets/IMC01.jpeg" alt="Logo de uma calculadora de IMC">
+<h1>Calculadora de IMC</h1>
+
+@if (!imc) {
+<label for="peso">Peso:</label>
+<input type="number" name="peso" max="350" min="0" placeholder="infórme seu peso" [(ngModel)]="peso">
+<label for="altura">Altura:</label>
+<input type="number" max="3" min="0" placeholder="infórme sua altura" [(ngModel)]="altura">
+
+<button (click)="calculaImc()">Calcular</button>
+}
+@else {
+<p>Peso: {{peso}}</p>
+<p>Altura: {{altura}}</p>
+<p>IMC: {{imc}}</p>
+<p>você esta com {{mensagem}} </p>
+
+<button (click)="novoCalculo()">Novo Calculo</button>
+}
